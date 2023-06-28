@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="UiWebAutomationTestSuite" duration-ms="43476" started-at="2023-06-28T13:57:49 IST" finished-at="2023-06-28T13:58:33 IST">
+    <groups>
+    </groups>
+    <test name="FileUploadTest" duration-ms="43476" started-at="2023-06-28T13:57:49 IST" finished-at="2023-06-28T13:58:33 IST">
+      <class name="com.uiautomation.webtest.Fileupload">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="launchBrowser" is-config="true" duration-ms="29260" started-at="2023-06-28T13:57:49 IST" finished-at="2023-06-28T13:58:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyFileUpload()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="verifyFileUpload" duration-ms="13555" started-at="2023-06-28T13:58:18 IST" finished-at="2023-06-28T13:58:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFileUpload -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="closebrowser" is-config="true" duration-ms="555" started-at="2023-06-28T13:58:32 IST" finished-at="2023-06-28T13:58:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.uiautomation.webtest.Fileupload -->
+    </test> <!-- FileUploadTest -->
+  </suite> <!-- UiWebAutomationTestSuite -->
+</testng-results>
