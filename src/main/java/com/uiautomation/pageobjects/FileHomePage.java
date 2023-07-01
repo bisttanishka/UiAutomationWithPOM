@@ -25,7 +25,7 @@ public class FileHomePage {
 	public
 	WebElement createAnAccount;
 	
-//To initialize all the webelement
+//To initialize all the webelement from page factory class
 	
 public FileHomePage(WebDriver driver) {
 

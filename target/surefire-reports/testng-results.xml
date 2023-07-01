@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="UiWebAutomationTestSuite" duration-ms="43476" started-at="2023-06-28T13:57:49 IST" finished-at="2023-06-28T13:58:33 IST">
+  <suite name="UiWebAutomationTestSuite" duration-ms="27052" started-at="2023-06-28T14:25:02 IST" finished-at="2023-06-28T14:25:29 IST">
     <groups>
     </groups>
-    <test name="FileUploadTest" duration-ms="43476" started-at="2023-06-28T13:57:49 IST" finished-at="2023-06-28T13:58:33 IST">
+    <test name="FileUploadTest" duration-ms="27052" started-at="2023-06-28T14:25:02 IST" finished-at="2023-06-28T14:25:29 IST">
       <class name="com.uiautomation.webtest.Fileupload">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="launchBrowser" is-config="true" duration-ms="29260" started-at="2023-06-28T13:57:49 IST" finished-at="2023-06-28T13:58:18 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="launchBrowser" is-config="true" duration-ms="12571" started-at="2023-06-28T14:25:02 IST" finished-at="2023-06-28T14:25:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="verifyFileUpload()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="verifyFileUpload" duration-ms="13555" started-at="2023-06-28T13:58:18 IST" finished-at="2023-06-28T13:58:32 IST">
+        <test-method status="PASS" signature="verifyFileUpload()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="verifyFileUpload" duration-ms="13891" started-at="2023-06-28T14:25:15 IST" finished-at="2023-06-28T14:25:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFileUpload -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="closebrowser" is-config="true" duration-ms="555" started-at="2023-06-28T13:58:32 IST" finished-at="2023-06-28T13:58:33 IST">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:com.uiautomation.webtest.Fileupload@78c03f1f]" name="closebrowser" is-config="true" duration-ms="529" started-at="2023-06-28T14:25:29 IST" finished-at="2023-06-28T14:25:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
