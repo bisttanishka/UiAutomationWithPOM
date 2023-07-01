@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Amazon pen order done(failed)" verbose="0">
+    <classes>
+      <class name="uiautomation.amazontestcases.Amazon">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="signupaccount"/>
+        </methods>
+      </class> <!-- uiautomation.amazontestcases.Amazon -->
+    </classes>
+  </test> <!-- Amazon pen order done(failed) -->
+</suite> <!-- Failed suite [Suite] -->

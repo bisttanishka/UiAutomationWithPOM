@@ -17,7 +17,7 @@ public class AmazonHomePage {
 	
 	@FindBy(xpath = "//label[normalize-space(text())=\"Email or mobile phone number\"]")
 	public
-	WebElement emailphonedisplay;
+	WebElement emailphonedisplay;//// //   
 	
 	@FindBy(xpath = "//input[@type=\"email\"]")
 	public
