@@ -38,11 +38,11 @@ Assert.assertEquals(singnupdi, true,"Signup not displayed");
 boolean emailphndisplay=amazonhomepageobject.emailphonedisplay.isDisplayed();
 Assert.assertEquals(emailphndisplay, true,"emailphndisplay not displayed");
 
-amazonhomepageobject.emailinput.sendKeys("8126921207");
+amazonhomepageobject.emailinput.sendKeys("");
 amazonhomepageobject.continuebutton.click();
 boolean passdisplay=amazonhomepageobject.pwrddisplay.isDisplayed();
 Assert.assertEquals(passdisplay, true,"Password not displayed");
-amazonhomepageobject.enterpwd.sendKeys("Karan@1234");
+amazonhomepageobject.enterpwd.sendKeys("");
 amazonhomepageobject.signin.click();
 amazonhomepageobject.search.sendKeys("Pen under 150");
 amazonhomepageobject.selectpen.click();
