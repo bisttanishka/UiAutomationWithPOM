@@ -38,11 +38,11 @@ Assert.assertEquals(singnupdi, true,"Signup not displayed");
 boolean emailphndisplay=amazonhomepageobject.emailphonedisplay.isDisplayed();
 Assert.assertEquals(emailphndisplay, true,"emailphndisplay not displayed");
 
-amazonhomepageobject.emailinput.sendKeys("");
+amazonhomepageobject.emailinput.sendKeys("");// bcz respo is public so i have made this empty while pushing to github.
 amazonhomepageobject.continuebutton.click();
 boolean passdisplay=amazonhomepageobject.pwrddisplay.isDisplayed();
 Assert.assertEquals(passdisplay, true,"Password not displayed");
-amazonhomepageobject.enterpwd.sendKeys("");
+amazonhomepageobject.enterpwd.sendKeys("");//bcz respo is public so i have made this empty while pushing to github.
 amazonhomepageobject.signin.click();
 amazonhomepageobject.search.sendKeys("Pen under 150");
 amazonhomepageobject.selectpen.click();
