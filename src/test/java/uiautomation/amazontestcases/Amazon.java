@@ -1,5 +1,6 @@
 package uiautomation.amazontestcases;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -13,22 +14,24 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import uiautomation.amazonpomobjects.AmazonHomePage;
+import uiautomation.utility.ReadProperties;
 
 public class Amazon {
 
 WebDriver driver;
 AmazonHomePage amazonhomepageobject;
 
+
 @BeforeTest
-public void launchbrowser() {
+public void launchbrowser() throws IOException {
 WebDriverManager.chromedriver().setup();
 driver=new ChromeDriver();
-driver.get("https://www.amazon.in/");
+driver.get(ReadProperties.getProperties("url"));
 driver.manage().window().maximize();
 amazonhomepageobject=new AmazonHomePage(driver);
 }
 @Test
-public void signupaccount() {
+public void signupaccount() throws IOException {
 
 amazonhomepageobject.signin1.click();
 
@@ -38,13 +41,13 @@ Assert.assertEquals(singnupdi, true,"Signup not displayed");
 boolean emailphndisplay=amazonhomepageobject.emailphonedisplay.isDisplayed();
 Assert.assertEquals(emailphndisplay, true,"emailphndisplay not displayed");
 
-amazonhomepageobject.emailinput.sendKeys("8126921207");// bcz respo is public so i have made this empty while pushing to github.
+amazonhomepageobject.emailinput.sendKeys(ReadProperties.getProperties("userName"));// bcz respo is public so i have made this empty while pushing to github.
 amazonhomepageobject.continuebutton.click();
 boolean passdisplay=amazonhomepageobject.pwrddisplay.isDisplayed();
 Assert.assertEquals(passdisplay, true,"Password not displayed");
-amazonhomepageobject.enterpwd.sendKeys("Karan@1234");//bcz respo is public so i have made this empty while pushing to github.
+amazonhomepageobject.enterpwd.sendKeys(ReadProperties.getProperties("password"));//bcz respo is public so i have made this empty while pushing to github.
 amazonhomepageobject.signin.click();
-amazonhomepageobject.search.sendKeys("Pen under 150");
+amazonhomepageobject.search.sendKeys(ReadProperties.getProperties("searhItem"));
 amazonhomepageobject.selectpen.click();
 amazonhomepageobject.hitpen1.click();
 //we can use this as it will show window's id
@@ -63,7 +66,7 @@ amazonhomepageobject.buynow.click();
 
 Set<String> newWindowHandles1 = driver.getWindowHandles();
 ArrayList<String> newHandlesList1 = new ArrayList<>(newWindowHandles1);
-driver.switchTo().window(newHandlesList.get(1));
+driver.switchTo().window(newHandlesList1.get(1));
 amazonhomepageobject.usethispaymentmethod.click();
 
 placeorder();
