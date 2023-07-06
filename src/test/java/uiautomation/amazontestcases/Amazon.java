@@ -67,7 +67,7 @@ amazonhomepageobject.buynow.click();
 Set<String> newWindowHandles1 = driver.getWindowHandles();
 ArrayList<String> newHandlesList1 = new ArrayList<>(newWindowHandles1);
 driver.switchTo().window(newHandlesList1.get(1));
-amazonhomepageobject.usethispaymentmethod.click();
+//amazonhomepageobject.usethispaymentmethod.click();
 
 placeorder();
 }

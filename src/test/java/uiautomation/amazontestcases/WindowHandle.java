@@ -55,7 +55,7 @@ for (String childWindow : childWindows) {
     if (!childWindow.equals(parentWindow)) {
         driver.switchTo().window(childWindow);
         break;
-    }
+    }	
 }
 
 //Create an iterator to iterate through the window handles

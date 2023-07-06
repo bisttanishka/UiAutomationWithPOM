@@ -14,7 +14,7 @@ public class ReadProperties {
 //Now we need to get key and value from the property files.
 //NOTE IF ANY METHOD, VARIABLE IS STATIC WITHIN A CLASS THEN WE CAN ACCESS THEM DIRECTLY BY USING <CLASS NAME.>.Because static variable and methods are being loaded during class load time.
 //AND IF THE METHOD, VARIAVLE ARE NOT STATIC THE WE NEED TO CREATE THE OBJECT OF THAT CLASS TO ACCESS THEM. 
-public static Properties prop;
+public static Properties prop;	
 static File file;
 static FileReader reader;
 public static void loadProperties() throws IOException {
